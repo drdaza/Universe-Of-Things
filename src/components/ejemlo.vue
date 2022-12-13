@@ -14,17 +14,14 @@
 <style lang="scss" scoped>
 
 #form{
-    
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; 
     flex-direction: column;
     width: 30%;
     height: 65%;
     background-color: #E34038;
     float: right ;
     margin-right: 3%;
-
-
 }
 #name{ 
    height: 10%; 
@@ -47,6 +44,9 @@ h1{
     background-color: #FFE7E2;
 }
 #foto{
+    margin-left: 30%;
+    border-radius: 60%;
+    width: 40%;
     
 }
 </style>
