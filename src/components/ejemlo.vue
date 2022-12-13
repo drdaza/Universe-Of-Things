@@ -14,6 +14,10 @@
 <style lang="scss" scoped>
 
 #form{
+<<<<<<< HEAD
+=======
+    border-radius: 5%;
+>>>>>>> 5e61f1eee64b56bd62d7277f0fd5d1556726f400
     display: flex;
     justify-content: space-between; 
     flex-direction: column;
@@ -24,29 +28,42 @@
     margin-right: 3%;
 }
 #name{ 
-   height: 10%; 
+   height: 8%; 
+   width: 64%;
    background-color: #155FCF;
+   border-radius: 7%;
+   justify-content: center;
 }
 #univers{
-    height: 10%;
+    height: 8%;
+    width: 64%;
     background-color: #155FCF;
+    border-radius: 7%;
 }
 #info{
     height: 10%;
+    width: 64%;
     background-color: #155FCF;
+    border-radius: 20%;
 }
 h1{
     
     text-align: center;
 }
 #add{
-
+    border-radius: 20%;
     background-color: #FFE7E2;
 }
 #foto{
+<<<<<<< HEAD
     margin-left: 30%;
     border-radius: 60%;
     width: 40%;
+=======
+    border-radius: 60%;
+    width: 40%;  
+    margin-left: 30%;
+>>>>>>> 5e61f1eee64b56bd62d7277f0fd5d1556726f400
     
 }
 </style>
