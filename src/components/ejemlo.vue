@@ -14,9 +14,9 @@
 <style lang="scss" scoped>
 
 #form{
-    
+    border-radius: 5%;
     display: flex;
-    justify-content: center; 
+    justify-content: space-between; 
     flex-direction: column;
     width: 30%;
     height: 65%;
@@ -27,26 +27,36 @@
 
 }
 #name{ 
-   height: 10%; 
+   height: 8%; 
+   width: 64%;
    background-color: #155FCF;
+   border-radius: 7%;
+   justify-content: center;
 }
 #univers{
-    height: 10%;
+    height: 8%;
+    width: 64%;
     background-color: #155FCF;
+    border-radius: 7%;
 }
 #info{
     height: 10%;
+    width: 64%;
     background-color: #155FCF;
+    border-radius: 20%;
 }
 h1{
     
     text-align: center;
 }
 #add{
-
+    border-radius: 20%;
     background-color: #FFE7E2;
 }
 #foto{
+    border-radius: 60%;
+    width: 40%;  
+    margin-left: 30%;
     
 }
 </style>
