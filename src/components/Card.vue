@@ -23,15 +23,15 @@
     })  
 </script>
 <template>
-    <div>
+    <div class="card">
         <img :src="image" alt="">
         <p>{{name}}</p>
         <p>{{realName}}</p>
         <p>{{alignment}}</p>
         <p>{{powerStats}}</p>
-        
     </div>
 </template>
 <style lang="scss" scoped>
-    
+@use '../assets/scss/main' as *;
+
 </style>

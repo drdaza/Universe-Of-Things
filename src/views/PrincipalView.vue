@@ -13,7 +13,7 @@
 </script>
 
 <template>
-  <main>
+  <main id="principal-main">
     <div  class="card-container" v-for="heroe in principalStore.Heroes">
     <Card
       :name="heroe.name"
@@ -23,6 +23,16 @@
       :image="heroe.images.sm"
       
     />
-  </div>
+    </div>
   </main>
 </template>
+<style lang="scss" scoped>
+@use '../assets/scss/main' as *;
+#principal-main{
+  @include displayFlex(100, 150vh, row, space-evenly);
+  flex-wrap: wrap;
+  .card-container{
+    @include displayFlex(20%, auto, column, normal);
+  }
+}
+</style>
