@@ -2,7 +2,7 @@
     const props = defineProps({
         name: {
             type: String,
-            default: null,
+            required: true,
         },
         realName: {
             type: String,
@@ -13,7 +13,7 @@
             default: null,
         },
         powerStats: {
-            type: Array,
+            type: Object,
             default: null,
         },
         image: {
@@ -24,12 +24,14 @@
 </script>
 <template>
     <div>
+        <img :src="image" alt="">
         <p>{{name}}</p>
         <p>{{realName}}</p>
         <p>{{alignment}}</p>
         <p>{{powerStats}}</p>
+        
     </div>
 </template>
-<style lang="">
+<style lang="scss" scoped>
     
 </style>
