@@ -4,7 +4,8 @@ import ButtonComponent from '../components/ButtonComponent.vue';
 
 <template>
   <main>
-    <div id="hola-mario"><p>Hola Mundo</p></div>
+    <div id="homeView"><p>Hola Mundo</p></div>
+    <div id="copied"></div>
     <ButtonComponent/>
   </main>
 </template>
