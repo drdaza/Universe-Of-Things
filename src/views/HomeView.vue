@@ -1,5 +1,5 @@
 <script setup>
-import ejemlo from '../components/ejemlo.vue';
+import ejemlo from '../components/addNewHero.vue';
 </script>
 
 <template>
