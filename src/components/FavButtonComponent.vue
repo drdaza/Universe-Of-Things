@@ -3,7 +3,7 @@
 function moveElements(){
   const node = document.getElementById("homeView");
   const clone = node.cloneNode(true);
-  const copied = document.getElementById("copied");
+  const copied = document.getElementById("aboutView");
   copied.appendChild(clone);
 }
   
