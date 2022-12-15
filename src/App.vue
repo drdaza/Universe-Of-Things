@@ -19,11 +19,18 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style scoped lang="scss">
+@font-face {
+  font-family: Title;
+  src: url(./assets/Shrikhand/Shrikhand-Regular.ttf);
+
+}
 header {
 
   background-color: #E34038;
-  width:85% ;
+  width:95% ;
   height: 20%;
+  margin: auto;
+  margin-top: 0.5%;
   border-top-left-radius: 40px 40px;
   border-bottom-right-radius: 40px 40px;
   border-top-right-radius: 40px 40px;
@@ -33,7 +40,8 @@ header {
 
 h1{
   color: #312D2D;
-  
+  font-family: Title;
+  font-size: 300%;
 
 }
 
