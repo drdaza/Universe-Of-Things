@@ -13,18 +13,23 @@ import { RouterLink, RouterView } from 'vue-router'
       </nav>
     </div>
   </header>
-
+  
   <RouterView />
 </template>
 
 <style scoped lang="scss">
 header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
 
-.logo {
- 
+  background-color: #E34038;
+  width:85% ;
+  height: 20%;
+  border-top-left-radius: 40px 40px;
+  border-bottom-right-radius: 40px 40px;
+  border-top-right-radius: 40px 40px;
+  border-bottom-left-radius: 40px 40px;
+  justify-content: center;
+  
+
 }
 
 nav {
