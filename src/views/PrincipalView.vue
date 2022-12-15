@@ -29,10 +29,13 @@
 <style lang="scss" scoped>
 @use '../assets/scss/main' as *;
 #principal-main{
-  @include displayFlex(100, 150vh, row, space-evenly);
+  @include displayFlex(100%, 150vh, row, space-evenly);
   flex-wrap: wrap;
+  background-color: $PrincipalColor;
+  overflow: auto;
   .card-container{
-    @include displayFlex(20%, auto, column, normal);
+    @include displayFlex(25%, auto, column, normal);
+    margin: 2%;
   }
 }
 </style>
