@@ -1,8 +1,8 @@
 <script setup>
   import { onBeforeMount, ref } from 'vue';
-  import {useHeroStore} from '../stores/PrincipalStore';
+  import {usePrincipalStore} from '../stores/PrincipalStore';
   import Card from '../components/Card.vue';
-  const principalStore = useHeroStore();
+  const principalStore = usePrincipalStore();
   onBeforeMount(()=>{
     getHeroes();
   })

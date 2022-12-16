@@ -1,6 +1,6 @@
 import {defineStore} from 'pinia';
 
-export const useHeroStore = defineStore ({
+export const usePrincipalStore = defineStore ({
     id: 'Heroes',
     state: () => ({
         Heroes: [],
@@ -10,6 +10,7 @@ export const useHeroStore = defineStore ({
             await fetch('https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/all.json')
             .then (response => response.json())
             .then (data => {
+                
                 this.Heroes=data;
                 console.log(this.Heroes);
             })
