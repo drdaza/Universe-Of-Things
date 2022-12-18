@@ -1,15 +1,20 @@
+<script setup>
+import Carrousel from '../components/carrousel/Carrousel.vue';
+</script>
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+
+    <Carrousel/>
   </div>
 </template>
 
-<style>
+<style scoped>
 @media (min-width: 1024px) {
   .about {
-    min-height: 100vh;
+    
     display: flex;
     align-items: center;
+    height: 150vh;
   }
 }
 </style>
