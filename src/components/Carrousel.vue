@@ -52,8 +52,6 @@
     
   </script>
   <style lang="scss" scoped>
-  div{
-    height: 50vh;
-  }
+  
     
   </style>

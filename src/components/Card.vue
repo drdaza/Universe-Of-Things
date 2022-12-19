@@ -1,4 +1,5 @@
 <script setup>
+import { computed } from 'vue';
     const props = defineProps({
         name: {
             type: String,
@@ -20,7 +21,17 @@
             type: String,
             default: null,
         }
-    })  
+    });
+
+    //Mehtods 
+    function changeFirstLetterUpperCase(word){
+        return word.charAt(0).toUpperCase() + word.slice(1);
+    }
+    function verifyContent(parameter){
+        return (parameter == '') ? 'Unknown': parameter;
+    }
+    delete props.powerStats.combat;
+    delete props.powerStats.durability;
 </script>
 <template>
     <div class="card">
@@ -29,10 +40,10 @@
             <p>{{name}}</p>
         </div>
         <div class="heroe-info">
-            <p><span>Nombre real:</span> {{realName}}</p>
-            <p><span>Alineamiento:</span> {{alignment}}</p>
+            <p><span>Real Name:</span> {{verifyContent(realName)}}</p>
+            <p><span>Alignment:</span> {{ changeFirstLetterUpperCase(alignment) }}</p>
             <div class="heroe-stats">
-                <p><span>Características:</span> {{powerStats}}</p>
+                <div v-for="item, key in powerStats"><span>{{ changeFirstLetterUpperCase(key) }}:</span> {{item}}</div>
             </div>
         </div>
     </div>
@@ -79,8 +90,7 @@
         margin-top: 2%;
         .heroe-stats {
             width: 90%;
-            font-size: small;
-            
+
         }
         span{
             font-weight: 900;

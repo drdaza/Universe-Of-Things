@@ -15,18 +15,18 @@
 
 <template>
   <main id="principal-main">
-    <Carrousel/>
+    <Carrousel class="card-container"/>
   </main>
 </template>
 <style lang="scss" scoped>
 @use '../assets/scss/main' as *;
 #principal-main{
-  @include displayFlex(100%, auto, row, space-evenly);
+  @include displayFlex(100%, 70vh, row, space-evenly);
   flex-wrap: wrap;
   background-color: $PrincipalColor;
   overflow: auto;
   .card-container{
-    @include displayFlex(20%, auto, column, normal);
+    @include displayFlex(100%, 88%, column, normal);
     margin: 2%;
   }
 }
