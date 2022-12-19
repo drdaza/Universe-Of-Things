@@ -2,6 +2,7 @@
   import { onBeforeMount, ref } from 'vue';
   import {usePrincipalStore} from '../stores/PrincipalStore';
   import Card from '../components/Card.vue';
+  import Carrousel from '../components/Carrousel.vue';
   const principalStore = usePrincipalStore();
   onBeforeMount(()=>{
     getHeroes();
@@ -14,16 +15,7 @@
 
 <template>
   <main id="principal-main">
-    <div  class="card-container" v-for="heroe in principalStore.Heroes">
-    <Card
-      :name="heroe.name"
-      :realName="heroe.biography.fullName"
-      :alignment="heroe.biography.alignment"
-      :powerStats="heroe.powerstats"
-      :image="heroe.images.sm"
-      
-    />
-    </div>
+    <Carrousel/>
   </main>
 </template>
 <style lang="scss" scoped>

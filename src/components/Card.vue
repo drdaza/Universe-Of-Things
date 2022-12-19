@@ -29,10 +29,10 @@
             <p>{{name}}</p>
         </div>
         <div class="heroe-info">
-            <p>Nombre real: {{realName}}</p>
-            <p>Alineamiento: {{alignment}}</p>
+            <p><span>Nombre real:</span> {{realName}}</p>
+            <p><span>Alineamiento:</span> {{alignment}}</p>
             <div class="heroe-stats">
-                <p>Características: {{powerStats}}</p>
+                <p><span>Características:</span> {{powerStats}}</p>
             </div>
         </div>
     </div>
@@ -72,17 +72,18 @@
         display: flex;
         flex-direction: column;
         align-items: left;
-        background-color: $SecondaryColor;
-        color: $QuaternaryColor;
+        color: $PrincipalColor;
         font-weight: bold;
-        font-size: medium;
+        font-size: small;
         border-radius: 5%;
-        margin-top: 10%;
+        margin-top: 2%;
         .heroe-stats {
             width: 90%;
-            margin-top: 5%;
             font-size: small;
-        
+            
+        }
+        span{
+            font-weight: 900;
         }
     }
 

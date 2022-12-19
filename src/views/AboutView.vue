@@ -1,10 +1,10 @@
 <script setup>
-import Carrousel from '../components/carrousel/Carrousel.vue';
+import Carrousel from '../components/Carrousel.vue';
 </script>
 <template>
   <div class="about">
 
-    <Carrousel/>
+    
   </div>
 </template>
 
